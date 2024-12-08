@@ -40,7 +40,7 @@ jobs:
 
       - name: Test the build
         run: |
-          dotnet test src/ --no-restore ` 
+          dotnet test src/ --no-restore `
             --logger "trx;logfilename=test_results.trx" `
             --logger "html;logfilename=test_results.html"
       # Log the test results and publish them
